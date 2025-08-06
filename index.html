@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BONGISPACE | Art & Création</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav>
+            <div class="logo-container">
+                <img src="assets/images/logo-bongispace.png" alt="BONGISPACE Logo" class="logo">
+            </div>
+
+            <!--BOUTON BURGER-->
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!--Menu Desktop-->
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Notre ADN</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--HERO SECTION-->
+        <section class="hero" id="home" >
+            <video autoplay muted loop class="hero-video">
+                <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+                <img src="assets/images/hero-fallback.jpg" alt="Atélier BONGISPACE">
+            </video>
+            <div class="hero-content">
+                <h1 data-aos="fade-down">BONGISPACE</h1>
+                <h2><span>Construire l'essentiel</span></h2>
+                <p data-aos="fade-right">Art . tech . talent</p>
+                <div class="cta-container" data-aos="zoom-in">
+                    <a href="#contact" class="cta-btn">Rejoindre l'aventure</a>
+                    <a href="#services" class="secondary-btn">Découvrir</a>
+                </div>
+            </div>
+
+            <!--Indicateur de scroll-->
+            <div class="scroll-down">
+                <span></span>
+            </div>
+        </section>
+
+        <!--SERVICES SECTION-->
+        <section id="Services" class="Services">
+            <h2 data-aos="fade-up">Nos <span>Services</span></h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Ce qu'on fait mieux que personne</p>
+
+            <!--FILTRE-->
+            <div class="filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Tout voir</button>
+                <button class="filter-btn"data-filter="digital">Création Digitale</button>
+                <button class="filter-btn"data-filter="tech">Tech mobile</button>
+                <button class="filter-btn"data-filter="artisanat">Artisanat</button>
+            </div>
+
+            <div class="Services-grid">
+                <div class="Service-card" data-category="digital" data-aos="zoom-in">
+                    <div class="card-icon">🎨</div>
+                    <h3>Identité visuelle</h3>
+                    <p>Logos & chartes graphiques qui marquent les esprits</p>
+                    <a href="#" class="card-link">Voir des exemples</a>
+                </div>
+
+                <div class="Service-card" data-category="tech" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-icon">📸</div>
+                    <h3>Apps AI</h3>
+                    <p>Chatbots et outils intelligents sur mesure</p>
+                    <a href="#" class="card-link">Découvrir</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--ADN SECTION-->
+        <section class="dna" id="adn">
+            <!--TITRE-->
+            <h2 data-aos="fade-up">L' <span>ADN</span>BONGISPACE</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Ce qui nous rend uniques</p>
+
+            <!--TIMELINE-->
+            <div class="timeline" data-aos="fade-up">
+                <!--Etape 1-->
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Naissance dans un garage</h3>
+                        <p>Premières voitures miniatures customisées</p>
+                    </div>
+                </div>
+
+                <!--Etape 2-->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Rencontre avec le digital</h3>
+                        <p>Création des premiers logos</p>
+                    </div>
+                </div>
+
+                <!--Etape 3-->
+            </div>
+
+            <!--Valeurs-->
+            <div class="values-grid">
+
+                <!--carte valeur 1-->
+                <div class="value-card" data-aos="flip-left">
+                    <div class="value-icon">🌍</div>
+                    <h3>Enracinement Local</h3>
+                    <p>On puise dans nos cultures pour inventer demain</p>
+                </div>
+
+                <!--carte valeur 2-->
+                <div class="value-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="value-icon">🚀</div>
+                    <h3>Audace technologique</h3>
+                    <p>L'IA rencontre l'artisanat dans nos atéliers</p>
+                </div>
+
+                <!--carte valeur 3-->
+            </div>
+
+            <!--Citation-->
+            <blockquote class="quote" data-aos="zoom-in">
+                <p>"Bâtir un futur où la tech ne remplace pas l'humain, mais le magnifie."</p>
+                <cite>Equipe BONGI</cite>
+            </blockquote>
+        </section>
+
+            
+
+        <!--FOOTER-->
+        <footer>
+            <p>Imaginons l'impossible puis créons-le.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
